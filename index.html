@@ -21,6 +21,7 @@
 			}
             #game-over-container {
                 display: none;
+                flex-direction: column;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -33,7 +34,7 @@
 	<body>
         <div id="points-container"><span id="points">0</span></div>
         <div id="lives-container"><span id="lives">0</span></div>
-        <div id="game-over-container">Game Over! <button id="restartGameButton">Restart</button></div>
+        <div id="game-over-container">Game Over!<span id="gameOverPoints"></span> <button id="restartGameButton">Restart</button></div>
 		<script type="module" src="./main.js"></script>
 	</body>
 </html>

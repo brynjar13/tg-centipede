@@ -29,6 +29,7 @@ let switchCamera = false;
 const pointsContainer = document.getElementById('points');
 const livesContainer = document.getElementById('lives');
 const gameOverContainer = document.getElementById('game-over-container');
+const gameOverPoints = document.getElementById('gameOverPoints');
 const restartGameButton = document.getElementById('restartGameButton');
 
 function init() {
@@ -435,7 +436,8 @@ function updateLives() {
 }
 
 function showGameOverScreen() {
-    gameOverContainer.style.display = 'block';
+    gameOverContainer.style.display = 'flex';
+    gameOverPoints.textContent = `Points: ${points}`;
 }
 
 function restartGame() {
