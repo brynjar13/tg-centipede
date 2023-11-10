@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Centipede</title>
+		<style>
+			body { margin: 0; }
+            #points-container {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				font-size: 18px;
+				color: white;
+			}
+            #lives-container {
+				position: absolute;
+				top: 30px;
+				left: 10px;
+				font-size: 18px;
+				color: white;
+			}
+            #game-over-container {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+				font-size: 32px;
+				color: white;
+            }
+		</style>
+	</head>
+	<body>
+        <div id="points-container"><span id="points">0</span></div>
+        <div id="lives-container"><span id="lives">0</span></div>
+        <div id="game-over-container">Game Over! <button id="restartGameButton">Restart</button></div>
+		<script type="module" src="./main.js"></script>
+	</body>
+</html>
